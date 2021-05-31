@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="pink">
+<div align="center">
+<h1>WELLCOME TO PROJECTS LIST</h1>
+{% for p in tp %}
+<b>PNAME</b>:{{ p.project }}<br>
+<b>TNAME</b>:{{ p.team_name}}<br><br>
+{% endfor %}<br><br>
+
+<a href="/">BACK</a>
+</div>
+</body>
+</html>

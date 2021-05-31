@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/detailsave/" method="post" enctype="multipart/form-data">
+   {% csrf_token %}
+NAME   : <input type="text" name="username"><br><br>
+EMAIL  : <input type="email" name="email"><br><br>
+PASSWORD : <input type="password" name="password"><br><br>
+MOBILE  : <input type="number" name="mobile"><br><br>
+PROFILE_PIC : <input type="file" name="profile_pic"><br><br>
+EXPERIENCE:<input type="number" name="experience"><br><br>
+AGE:<input type="number" name="age"><br><br>
+SALARY:<input type="number" name="salary"><br><br>
+ADDRESS:<input type="text" name="address"><br><br>
+<input type="submit" value="STORE">
+</form><br/><br/>
+
+<a href="/">BACK</a>
+</body>
+</html>

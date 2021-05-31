@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in obj %}
+<b>NAME</b>:{{ i.empname}} <br>
+<b>EXPERIENCE</b>:{{ i.experience}} <br>
+<b>SALARY</b>:{{ i.salary}} <br>
+<b>PROFILE_PIC</b>:<img src="{{ i.profile_pic.url }}"> <br>
+<b>MOBILE</b>:{{ i.mobile}} <br>
+<b>AGE</b>:{{ i.age}} <br>
+<b>ADDRESS</b>:{{ i.address}}<br><br>
+{% endfor %}<br><br>
+
+<a href="/">BACK</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="pink">
+
+<div align="center">
+<h1>WELLCOME TO TEAM & TEAM MEMBERS & TEAM LEAD</h1>
+{% for i in obj %}
+<b>TEAM_NAME<b>:{{ i.team_name}}<br>
+<b>TEAM_MEMBERS<b>:{{ i.team_members}}<br>
+<b>TEAM_LEAD<b>:{{ i.team_lead}} <br><br>
+{% endfor %}<br><br>
+</div>
+
+</body>
+</html>
